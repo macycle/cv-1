@@ -51,7 +51,7 @@ let step=()=>{
     if(string[n]==='\n'){   //对每一个字符都进行检查，如果是换行符，就先处理一下；
         string2+='<br>';
     }else if(string[n]===' '){   //空格替换成&nbsp;
-        string2+='&nbsp'
+        string2+='&nbsp';
     }else{
         string2+=string[n];  //不是字符就直接加上该字符；
     }
@@ -64,7 +64,7 @@ let step=()=>{
     n+=1;
     step();
    }
-    }, 0);
+    }, 50);
 };
 
 step()
